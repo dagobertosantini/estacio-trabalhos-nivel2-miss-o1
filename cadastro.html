@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas da Tia Dani</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="formatos.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="receitas.html">Receitas</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="cadastro.html">Cadastro<span class="sr-only">(Página atual)</span></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div>
+            <h1>Efetue Seu Cadastro</h1>
+        </div>
+        <div class="container-fluid">
+            <form method="post" action="enviarEmail.php">
+                <div class="form-group row">
+                    <label for="idnome" class="col-sm-1 col-form-label">Nome</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="idnome" required>
+                    </div>
+                </div>
+        
+                <div class="form-group row">
+                    <label for="idemail" class="col-sm-1 col-form-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" id="idemail" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="idrua" class="col-sm-1 col-form-label">Rua</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="idrua" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="idnum" class="col-sm-1 col-form-label">Número</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="idnum" required>
+                    </div>
+
+                    <label for="idcompl" class="col-sm-2 col-form-label">Complemento</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="idcompl" required>
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <label for="idcidade" class="col-sm-1 col-form-label">Cidade</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="idcidade" required>
+                    </div>
+
+                    <label for="idestado" class="col-sm-1 col-form-label">Estado</label>
+                    <div class="col-sm-2">
+                        <select class="custom-select" id="idestado">
+                            <option value="">Selecione</option>
+                            <option value="">Acre</option>
+                            <option value="">Alagoas</option>
+                            <option value="">Amapá</option>
+                            <option value="">Amazonas</option>
+                            <option value="">Bahia</option>
+                            <option value="">Ceará</option>
+                            <option value="">Distrito Federal</option>
+                            <option value="">Espírito Santo</option>
+                            <option value="">Goiás</option>
+                            <option value="">Maranhão</option>
+                            <option value="">Mato Grosso</option>
+                            <option value="">Mato Grosso do Sul</option>
+                            <option value="">Minas Gerais</option>
+                            <option value="">Pará</option>
+                            <option value="">Paraíba</option>
+                            <option value="">Paraná</option>
+                            <option value="">Pernambuco</option>
+                            <option value="">Piauí</option>
+                            <option value="">Rio de Janeiro</option>
+                            <option value="">Rio Grande do Norte</option>
+                            <option value="">Rio Grande do Sul</option>
+                            <option value="">Rondônia</option>
+                            <option value="">Roraima</option>
+                            <option value="">Santa Catarina</option>
+                            <option value="">São Paulo</option>
+                            <option value="">Sergipe</option>
+                            <option value="">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <label for="idcep" class="col-sm-1 col-form-label">CEP</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="idcep" required>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <span>&copy; &nbsp; Dani 2023</span>
+    </footer>
+
+</body>
+
+</html>

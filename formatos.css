@@ -1,0 +1,43 @@
+body{
+    background-color:rgb(189, 44, 157);
+    overflow-y:auto;
+    height: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.intro{
+    text-align: center;
+    font-weight: bold;
+}
+
+.header{
+    height: 60px;
+}
+
+main{
+    height: calc(100vh - 100px);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color:black;
+    color: #FFF;
+    width: 100%;
+    left: 0px;
+    height: 25px;    
+    text-align: center;
+    line-height: 25px;
+}
+
+.aligned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
